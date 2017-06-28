@@ -11,9 +11,10 @@ import "hammerjs";
 
 import { AppComponent } from './app.component';
 import { appRoutes } from "./app.routes";
+import { SharedModule } from "./share.module";
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +26,8 @@ import { appRoutes } from "./app.routes";
     BrowserAnimationsModule,
     MaterialModule,
     MdNativeDateModule,
-    SyModule
+    SyModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

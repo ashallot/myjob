@@ -1,0 +1,92 @@
+button {
+    color: rgba(45, 45, 45, 0.5);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.carousel {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+}
+
+.carousel img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.indicators {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.indicators > li {
+    float: left;
+    outline: none;
+    padding: 1rem 0.3rem;
+    position: relative;
+}
+
+.indicators > li.active > button {
+ color: rgb(255, 45, 100);
+}
+
+.navigation-arrow.left {
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100%; 
+    outline: none;
+    position: absolute;
+    left: -2px;
+    top: 0;
+}
+
+.navigation-arrow.right {
+    cursor: pointer;
+    font-size: 2rem;
+    height: 100%; 
+    outline: none;
+    position: absolute;
+    right: -2px;
+    top: 0;
+}
+
+.panes {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    /*transition: left 0.3s;
+    transition-timing-function: ease-in-out;
+    animation: carousel 30s infinite;*/
+}
+
+.addpanes {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    /*transition: left 0.2s;
+    transition-timing-function: ease-in-out;
+    animation: carousel 30s infinite;*/
+}
+
+ ol li {
+    float: left;
+    position: relative;
+}
+
+ol li img {
+    height: 500px;
+}

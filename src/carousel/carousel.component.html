@@ -1,0 +1,22 @@
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="panes-container"  id="carousel"  (mouseover)="onMouseOverslide()" (mouseout)="onMouseOutslide()">
+            <!--  (mouseover)="onMouseOverslide()" (mouseout)="onMouseOutslide()"-->
+            <ol scrollleft class="panes" [ngStyle]="{'left': setPosition(), 'width': getPanesWidth()}" style="height: 100%;">
+                <li *ngFor="let item of items" [ngStyle]="{'width': getLiWidth()}" style="
+                height: 100%;">
+                    <a href="#"><img style="height: 100%;" src="{{item.source}}"></a>
+                </li>
+            </ol>
+            <button id="prevbtn" class="navigation-arrow left" (click)="previous()" title="previous"><img [src]="prevsrc" (mouseover)="onMouseOverprev()" (mouseout)="onMouseOutprev()" /></button>
+            <button id="nextbtn" class="navigation-arrow right" (click)="next()" title="next"><img [src]="nextsrc" (mouseover)="onMouseOvernext()" (mouseout)="onMouseOutnext()" /></button>
+        </div>
+        <!--<div class="indicators-container">
+            <ol class="indicators">
+                <li *ngFor="let item of items ; let i = index" (click)="setItem(i)" [class.active]="i == selectedItem">
+                    <button><i class="fa fa-circle" aria-hidden="true"></i></button> 
+                </li>
+            </ol>
+        </div>-->
+    </div>
+</div>
